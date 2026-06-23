@@ -31,7 +31,7 @@
 <summary><b>📂 More Projects</b></summary>
 
 | 프로젝트 | 설명 | 기술 스택 |
-| :------- | :--------------- | :------------------ |
+| :-------------------------------- | :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------- |
 | **[Movie Sentiment](https://github.com/EuijeongHan/codeit_mission18-movie-review)** | 영화 리뷰 감성분석 풀스택 앱 · DB 연동 및 PDF 리포트(한글 폰트 렌더링) | `KcELECTRA` `FastAPI`<br>`Streamlit` `SQLModel` |
 | **[MNIST & PillFinder](https://github.com/EuijeongHan/codeit_mission17-pill-mnist)** | 실시간 캔버스 숫자 인식 + 알약 탐지 · Docker Hub 배포 | `PyTorch` `CNN`<br>`YOLO11` `Docker` |
 | **[foRG-mini](https://github.com/EuijeongHan/streamlit_forg-mini)** | foRG 경량 데모 · DART API + LLM 요약 프로토타입 | `Streamlit`<br>`OpenRouter` |
