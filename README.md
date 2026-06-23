@@ -38,7 +38,7 @@
 
 <table>
   <tr>
-    <td align="center"><b>BidMate RAG Service</b></td>
+    <td align="center"><b>RFP RAG Service</b></td>
     <td align="center"><b>Pill Detection Finder</b></td>
   </tr>
   <tr>
