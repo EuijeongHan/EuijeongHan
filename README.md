@@ -38,13 +38,17 @@
 
 <table>
   <tr>
-    <td align="center"><b>RFP RAG Service</b></td>
+    <td align="center"><b>MNIST Service</b></td>
     <td align="center"><b>Pill Detection Finder</b></td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img width="1203" height="763" alt="gcp_demo" src="https://github.com/user-attachments/assets/b7e68a4a-8546-424e-b1b3-3ca249b49c5a" />      
+  <!-- </tr>
+
+   -->
     </td>
+    <td align="center">
+      <!-- 동영상 주소일 경우 video 태그로 변경 -->
+      <video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" width="380" autoplay loop muted playsinline></video>
+    </td>
+    
     <td align="center">
       <!-- 동영상 주소일 경우 video 태그로 변경 -->
       <video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" width="380" autoplay loop muted playsinline></video>
@@ -55,7 +59,7 @@
 <table>
   <tr>
     <td align="center"><b>foRG-mini Service</b></td>
-    <td align="center"><b>foRG Telegram bot</b></td>
+    <td align="center"><b>NMIST NLP Service</b></td>
   </tr>
   <tr>
     <td align="center">
