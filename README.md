@@ -23,7 +23,7 @@
 ## 💻 Featured Projects
 
 | 프로젝트 | 설명 | 기술 스택 |
-| :-------------------------------- | :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------- |
+| :------------------- | :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------- |
 | **[입찰메이트 (BidMate)](https://github.com/GunhoJin/2Team_Project)** | **B2G 공공조달 RAG 시스템** · *Retrieval/생성 평가 리드*<br>• 임베딩 3종 × LLM 4종 = **12개 조합 비교 실험** 후 KURE-v1 + Phi-4-mini 최종 선정<br>• 쿼리 유형별 Dual Routing 서빙 아키텍처 설계<br>• 평가 파이프라인 구축 → **Hit@5 0.91 / MRR 0.85 / nDCG 0.81** | `KURE-v1` `KoE5`<br>`ChromaDB` `BM25(Kiwi)`<br>`bge-reranker-v2-m3`<br>`Phi-4-mini` `Gemma` |
 | **[알약 탐지 (HealthEat)](https://github.com/EuijeongHan/pill_detection_project)** | **알약 객체 탐지·분류 (73종)** · *Data Engineering 리드*<br>• 전처리·증강 파이프라인 전담 및 공유 모듈 구축<br>• DETR 베이스라인 독립 실험<br>• **Kaggle mAP@0.5 0.986** 달성 | `YOLO11` `PyTorch`<br>`DETR` `COCO`<br>`FastAPI` |
 | **[foRG](https://github.com/EuijeongHan/forg)** | **DART 공시 데이터 자동화 시스템**<br>• 공시 정보 추출 → LLM 요약 파이프라인<br>• 텔레그램 봇 연동 실시간 리포팅 자동화 | `FastAPI` `PostgreSQL`<br>`Docker` `Telegram Bot`<br>`Claude API` |
@@ -37,34 +37,25 @@
 | **[foRG-mini](https://github.com/EuijeongHan/streamlit_forg-mini)** | foRG 경량 데모 · DART API + LLM 요약 프로토타입 | `Streamlit`<br>`OpenRouter` |
 
 </details>
-
 <br>
 
-<div align="center">
-
-### 🔍 Project Demo
-<details>
-<summary><b>🔍 More Projects Demo</b></summary>
-
-<br>
+## 🔍 Project Demo
 
 <table>
   <tr>
-    <td align="center"><b>MNIST Service</b></td>
-    <td align="center"><b>Pill Detection Finder</b></td>
-    <td align="center"><b>foRG-mini Service</b></td>
-    <td align="center"><b>Movie Review & Sentiment</b></td>
+    <td align="center" width="25%"><b>MNIST Service</b></td>
+    <td align="center" width="25%"><b>Pill Detection Finder</b></td>
+    <td align="center" width="25%"><b>foRG-mini Service</b></td>
+    <td align="center" width="25%"><b>Movie Review & Sentiment</b></td>
   </tr>
   <tr>
-    <td align="center"><video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" width="220" height="160" autoplay loop muted playsinline></video></td>
-    <td align="center"><video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" width="220" height="160" autoplay loop muted playsinline></video></td>
-    <td align="center"><video src="https://github.com/user-attachments/assets/8be287b3-7aaf-4f6f-a6af-6c815a879f47" width="220" height="160" autoplay loop muted playsinline></video></td>
-    <td align="center"><video src="https://github.com/user-attachments/assets/1559169a-27ad-467a-baed-949b735d9c2d" width="220" height="160" autoplay loop muted playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/8be287b3-7aaf-4f6f-a6af-6c815a879f47" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/1559169a-27ad-467a-baed-949b735d9c2d" muted autoplay loop playsinline></video></td>
   </tr>
 </table>
 
-</details>
-</div>
 ---
 
 ## 🛠️ Tech Stack
