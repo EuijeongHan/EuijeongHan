@@ -12,7 +12,7 @@
 ## 🎯 Core Competencies
 
 | 영역 | 핵심 기술 및 역량 |
-| :------------------ | :------------------- |
+| :-------------------- | :--------------------- |
 | **RAG / LLM** | 임베딩·LLM 12개 조합 비교 평가 후 모델 선정 · Hybrid Search(BM25+Dense), Reranking, Query Routing 설계 · Retrieval/생성 평가 파이프라인(Hit@K, MRR, nDCG, RAGAS) · LLM-as-Judge 자동화 |
 | **Computer Vision** | 객체 탐지 파이프라인 구축(YOLO11, DETR) · 비교 실험(RetinaNet, Faster R-CNN) · 데이터 전처리·증강(Stratified Split, Copy-Paste, CLAHE, Letterbox) · COCO 포맷 어노테이션 관리 |
 | **NLP** | KcELECTRA 파인튜닝, 감성분석 · PEFT(LoRA, AdaLoRA, Prompt Tuning) 비교 실험 · KoBART 요약, Seq2Seq+Attention 번역 |
@@ -23,7 +23,7 @@
 ## 💻 Featured Projects
 
 | 프로젝트 | 설명 | 기술 스택 |
-| :-------------------- | :---------------------------------------------------------------- | :---------------------------------------------------------------------------- |
+| :---------------------- | :---------------------------------------------------------------- | :------------------------------------------------------------------------------ |
 | **[입찰메이트 (BidMate)](https://github.com/GunhoJin/2Team_Project)** | **B2G 공공조달 RAG 시스템** · *Retrieval/생성 평가 리드*<br>• 임베딩 3종 × LLM 4종 = **12개 조합 비교 실험** 후 KURE-v1 + Phi-4-mini 최종 선정<br>• 쿼리 유형별 Dual Routing 서빙 아키텍처 설계<br>• 평가 파이프라인 구축 → **Hit@5 0.91 / MRR 0.85 / nDCG 0.81** | `KURE-v1` `KoE5`<br>`ChromaDB` `BM25(Kiwi)`<br>`bge-reranker-v2-m3`<br>`Phi-4-mini` `Gemma` |
 | **[알약 탐지 (HealthEat)](https://github.com/EuijeongHan/pill_detection_project)** | **알약 객체 탐지·분류 (73종)** · *Data Engineering 리드*<br>• 전처리·증강 파이프라인 전담 및 공유 모듈 구축<br>• DETR 베이스라인 독립 실험<br>• **Kaggle mAP@0.5 0.986** 달성 | `YOLO11` `PyTorch`<br>`DETR` `COCO`<br>`FastAPI` |
 | **[foRG](https://github.com/EuijeongHan/forg)** | **DART 공시 데이터 자동화 시스템**<br>• 공시 정보 추출 → LLM 요약 파이프라인<br>• 텔레그램 봇 연동 실시간 리포팅 자동화 | `FastAPI` `PostgreSQL`<br>`Docker` `Telegram Bot`<br>`Claude API` |
