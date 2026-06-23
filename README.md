@@ -40,7 +40,6 @@
 <br>
 
 ## 🔍 Project Demo
-
 <table>
   <tr>
     <td align="center" width="25%"><b>MNIST Service</b></td>
@@ -49,12 +48,13 @@
     <td align="center" width="25%"><b>Movie Review & Sentiment</b></td>
   </tr>
   <tr>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" muted autoplay loop playsinline></video></td>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" muted autoplay loop playsinline></video></td>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/8be287b3-7aaf-4f6f-a6af-6c815a879f47" muted autoplay loop playsinline></video></td>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/1559169a-27ad-467a-baed-949b735d9c2d" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/6670b263-d858-4954-87f0-5cde5256eb0f" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/d65565b7-3889-4213-80e2-877f4d0a77cb" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/fcf8a899-c7a3-4183-bf00-f237941b7577" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/7a900284-4b9c-4c5a-a0e6-098f1f7b88eb" muted autoplay loop playsinline></video></td>
   </tr>
 </table>
+
 
 ---
 
@@ -89,7 +89,7 @@
 * 📅 2023.12 - 2025.12   │ (주)코리아경기도 플랫폼사업실 기획팀 재직 (배달특급 기획/운영)
 * 📅 2020.08 - 2023.07   │ CAFE.STAYPLACE 총괄 운영
 * 📅 2015.01 - 2019.04   │ 5급 공무원(재경직) 공개채용 준비
-* 📅 2009.03 - 2017.08   │ 숭실대학교 산업정보시스템공학 (공학사 심화)
+* 📅 2009.03 - 2017.08   │ 숭실대학교 산업정보시스템공학(공학사 심화)
 
 ---
 <div align="center">
