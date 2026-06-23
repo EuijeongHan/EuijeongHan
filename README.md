@@ -27,6 +27,7 @@
 | **[입찰메이트 (BidMate)](https://github.com/GunhoJin/2Team_Project)** | **B2G 공공조달 RAG 시스템**<br>• Retrieval·생성 평가 파이프라인 설계<br>• Dual Routing 서빙 구성 (Hit@5: 0.91 / MRR: 0.85) | `KURE-v1` `ChromaDB`<br>`BM25` `bge-reranker`<br>`Phi-4` `GCP` |
 | **[알약 탐지 (HealthEat)](https://github.com/EuijeongHan/pill_detection_project)** | **알약 객체 탐지·분류 파이프라인**<br>• 데이터 전처리 및 증강 파이프라인 전담<br>• Kaggle mAP@0.5 **0.986** 달성 | `YOLO11` `PyTorch`<br>`COCO` `FastAPI` |
 | **[MNIST&PillFinder](https://github.com/EuijeongHan/codeit_mission17-pill-mnist)** | **실시간 캔버스 숫자 인식 및 알약 분석**<br>• 웹 브라우저 기반 손글씨 실시간 추론 시스템<br>• PyTorch 모델의 경량화 서빙 구현 | `PyTorch` `CNN`<br>`FastAPI` `Streamlit` |
+| **[Sentiment](https://github.com/EuijeongHan/codeit_mission18-movie-review)** | | `PyTorch` `LLM`<br>`FastAPI` `Streamlit` |
 | **[foRG](https://github.com/EuijeongHan/forg)** | **DART 공시 데이터 자동화 시스템**<br>• 금융·공시 도메인 정보 추출 및 LLM 요약<br>• 텔레그램 봇 연동 실시간 리포팅 자동화 | `FastAPI` `Docker`<br>`PostgreSQL`<br>`Claude API` |
 | **[foRG-mini](https://github.com/EuijeongHan/streamlit_forg-mini)** | **foRG 시스템 경량 데모 웹 인터페이스**<br>• Streamlit 기반 대시보드 구현 및 인터랙티브 UI 제공 | `Streamlit` `Python`<br>`Claude API` |
 
