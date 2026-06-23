@@ -44,5 +44,5 @@
 ---
 
 ## ✉️ Contact & Connect
-* **Email:** wina0901@gmail.com
+* **Email:** hej4016@gmail.com
 * **GitHub:** [github.com/EuijeongHan](https://github.com/EuijeongHan)
