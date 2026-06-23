@@ -40,10 +40,8 @@
   <tr>
     <td align="center"><b>MNIST Service</b></td>
     <td align="center"><b>Pill Detection Finder</b></td>
-  <!-- </tr>
+  </td>
 
-   -->
-    </td>
     <td align="center">
       <!-- 동영상 주소일 경우 video 태그로 변경 -->
       <video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" width="380" autoplay loop muted playsinline></video>
