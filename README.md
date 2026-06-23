@@ -56,7 +56,7 @@
 <table>
   <tr>
     <td align="center"><b>foRG-mini Service</b></td>
-    <td align="center"><b>NMIST NLP Service</b></td>
+    <td align="center"><b>Movie Review Sentiment</b></td>
   </tr>
   <tr>
     <td align="center">
