@@ -57,6 +57,21 @@
   </tr>
 </table>
 
+## 🔍 Project Demo
+<table>
+  <tr>
+    <td align="center" width="200"><b>MNIST Service</b></td>
+    <td align="center" width="200"><b>Pill Detection Finder</b></td>
+    <td align="center" width="200"><b>Movie Review & Sentiment</b></td>
+    <td align="center" width="200"><b>foRG-mini Service</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="200"><video src="https://github.com/user-attachments/assets/b4b01687-b725-4b7d-8c05-b5bfee3006cc" width="200" muted autoplay loop playsinline></video></td>
+    <td align="center" width="200"><video src="https://github.com/user-attachments/assets/9496be54-4271-41ca-afea-dd3eb1cbc5d4" width="200" muted autoplay loop playsinline></video></td>
+    <td align="center" width="200"><video src="https://github.com/user-attachments/assets/f1b32d04-198a-4ff0-8438-2cc9940ea8ce" width="200" muted autoplay loop playsinline></video></td>
+    <td align="center" width="200"><video src="https://github.com/user-attachments/assets/368c6fc4-e738-4405-8a1e-a60acc5ea0eb" width="200" muted autoplay loop playsinline></video></td>
+  </tr>
+</table>
 
 ---
 
