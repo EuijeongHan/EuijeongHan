@@ -1,6 +1,7 @@
 # 한의정 · Han Eui Jeong
 ### AI Engineer | MLOps
 
+
 > **"Density over Speed"** — 모델 학습부터 평가·서빙·배포까지 End-to-End 구조적 완결성을 고민합니다.
 
 `RAG` · `Computer Vision` · `NLP` · `Model Serving`
@@ -24,9 +25,13 @@
 
 | 프로젝트 | 설명 | 기술 스택 |
 | :--- | :--- | :--- |
-| **[입찰메이트 (BidMate)](레포_링크)** | B2G 공공조달 RAG 시스템. Retrieval·생성 평가 파이프라인 설계 및 Dual Routing 서빙 구성 (Hit@5 0.91 / MRR 0.85) | `KURE-v1` `ChromaDB` `BM25` `bge-reranker` `Phi-4` `GCP` |
-| **[알약 탐지 (HealthEat)](레포_링크)** | 알약 객체 탐지·분류 파이프라인. 데이터 전처리 전담, Kaggle mAP@0.5 0.986 | `YOLO11` `PyTorch` `COCO` `FastAPI` |
-| **[foRG](레포_링크)** | DART 공시 데이터 + LLM 요약 시스템. 금융·공시 도메인 자동 리포팅 | `FastAPI` `PostgreSQL` `Docker` `Telegram Bot` `Claude API` |
+| **[입찰메이트 (BidMate)]([레포_링크](https://github.com/GunhoJin/2Team_Project))** | B2G 공공조달 RAG 시스템. Retrieval·생성 평가 파이프라인 설계 및 Dual Routing 서빙 구성 (Hit@5 0.91 / MRR 0.85) | `KURE-v1` `ChromaDB` `BM25` `bge-reranker` `Phi-4` `GCP` |
+| **[알약 탐지 (HealthEat)]([레포_링크](https://github.com/EuijeongHan/pill_detection_project))** | 알약 객체 탐지·분류 파이프라인. 데이터 전처리 전담, Kaggle mAP@0.5 0.986 | `YOLO11` `PyTorch` `COCO` `FastAPI` |
+| **[MNIST&PillFinder]([레포_링크](https://github.com/EuijeongHan/codeit_mission17-pill-mnist))** | DART 공시 데이터 + LLM 요약 시스템. 금융·공시 도메인 자동 리포팅 |
+| **[foRG]([레포_링크](https://github.com/EuijeongHan/forg))** | DART 공시 데이터 + LLM 요약 시스템. 금융·공시 도메인 자동 리포팅 | `FastAPI` `PostgreSQL` `Docker` `Telegram Bot` `Claude API` |
+| **[foRG-mini]([레포_링크](https://github.com/EuijeongHan/streamlit_forg-mini))** | DART 공시 데이터 + LLM 요약 시스템. 금융·공시 도메인 자동 리포팅 | 
+
+
 
 <div align="center">
 
@@ -40,7 +45,7 @@
   </tr>
   <tr>
     <td><img src="데모_링크_1" width="380"/></td>
-    <td><img src="데모_링크_2" width="380"/></td>
+    <td><img src="[데모_링크_2](https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180)" width="380"/></td>
   </tr>
 </table>
 
@@ -70,12 +75,14 @@
   * 2015.01.01. ~ 2019.04.16. 5급 공무원(재경직) 준비
   * 2009.03.02. ~ 2017.08.18. 숭실대학교 산업정보시스템공학(공학사 심화) 전공
 
+
 ---
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=EuijeongHan&show_icons=true&theme=tokyonight&hide_border=true" height="160" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EuijeongHan&layout=compact&theme=tokyonight&hide_border=true" height="160" />
 </div>
+
 ---
 
 ## ✉️ Contact & Connect
