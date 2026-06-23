@@ -44,30 +44,18 @@
   <tr>
     <td align="center" width="25%"><b>MNIST Service</b></td>
     <td align="center" width="25%"><b>Pill Detection Finder</b></td>
+    <td align="center" width="25%"><b>Movie Review & Sentimen
+
+
+
+t</b></td>
     <td align="center" width="25%"><b>foRG-mini Service</b></td>
-    <td align="center" width="25%"><b>Movie Review & Sentiment</b></td>
   </tr>
   <tr>
     <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" muted autoplay loop playsinline></video></td>
     <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" muted autoplay loop playsinline></video></td>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/8be287b3-7aaf-4f6f-a6af-6c815a879f47" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/5707452c-cac7-4c57-a013-17554110c5e9" muted autoplay loop playsinline></video></td>
     <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/1559169a-27ad-467a-baed-949b735d9c2d" muted autoplay loop playsinline></video></td>
-  </tr>
-</table>
-
-## 🔍 Project Demo
-<table>
-  <tr>
-    <td align="center" width="200"><b>MNIST Service</b></td>
-    <td align="center" width="200"><b>Pill Detection Finder</b></td>
-    <td align="center" width="200"><b>Movie Review & Sentiment</b></td>
-    <td align="center" width="200"><b>foRG-mini Service</b></td>
-  </tr>
-  <tr>
-    <td align="center" width="200"><video src="https://github.com/user-attachments/assets/b4b01687-b725-4b7d-8c05-b5bfee3006cc" width="200" muted autoplay loop playsinline></video></td>
-    <td align="center" width="200"><video src="https://github.com/user-attachments/assets/9496be54-4271-41ca-afea-dd3eb1cbc5d4" width="200" muted autoplay loop playsinline></video></td>
-    <td align="center" width="200"><video src="https://github.com/user-attachments/assets/f1b32d04-198a-4ff0-8438-2cc9940ea8ce" width="200" muted autoplay loop playsinline></video></td>
-    <td align="center" width="200"><video src="https://github.com/user-attachments/assets/368c6fc4-e738-4405-8a1e-a60acc5ea0eb" width="200" muted autoplay loop playsinline></video></td>
   </tr>
 </table>
 
