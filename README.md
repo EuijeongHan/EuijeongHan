@@ -23,7 +23,7 @@
 ## 💻 Projects
 
 | 프로젝트 | 설명 | 기술 스택 |
-| :--- | :--- | :--- |
+| :-------- | :----------- | :----------- |
 | **[입찰메이트 (BidMate)](https://github.com/GunhoJin/2Team_Project)** | **B2G 공공조달 RAG 시스템**<br>• Retrieval·생성 평가 파이프라인 설계<br>• Dual Routing 서빙 구성 (Hit@5: 0.91 / MRR: 0.85) | `KURE-v1` `ChromaDB`<br>`BM25` `bge-reranker`<br>`Phi-4` `GCP` |
 | **[알약 탐지 (HealthEat)](https://github.com/EuijeongHan/pill_detection_project)** | **알약 객체 탐지·분류 파이프라인**<br>• 데이터 전처리 및 증강 파이프라인 전담<br>• Kaggle mAP@0.5 **0.986** 달성 | `YOLO11` `PyTorch`<br>`COCO` `FastAPI` |
 | **[MNIST&PillFinder](https://github.com/EuijeongHan/codeit_mission17-pill-mnist)** | **실시간 캔버스 숫자 인식 및 알약 분석**<br>• 웹 브라우저 기반 손글씨 실시간 추론 시스템<br>• PyTorch 모델의 경량화 서빙 구현 | `PyTorch` `CNN`<br>`FastAPI` `Streamlit` |
@@ -43,8 +43,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="<img width="440" height="535" alt="스크린샷 2026-06-23 오후 5 36 32" src="https://github.com/user-attachments/assets/c47d20e3-43a4-475a-b032-ce21152b3122" />
-" width="380"/>
+      <img src="https://github.com/user-attachments/assets/c47d20e3-43a4-475a-b032-ce21152b3122" width="440" height="535">
     </td>
     <td align="center">
       <!-- 동영상 주소일 경우 video 태그로 변경 -->
