@@ -43,7 +43,8 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://via.placeholder.com/380x240.png?text=BidMate+Demo+Preparing" width="380"/>
+      <img src="<img width="440" height="535" alt="스크린샷 2026-06-23 오후 5 36 32" src="https://github.com/user-attachments/assets/c47d20e3-43a4-475a-b032-ce21152b3122" />
+" width="380"/>
     </td>
     <td align="center">
       <!-- 동영상 주소일 경우 video 태그로 변경 -->
