@@ -43,7 +43,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/c47d20e3-43a4-475a-b032-ce21152b3122" width="440" height="535">
+      <img width="1203" height="763" alt="gcp_demo" src="https://github.com/user-attachments/assets/b7e68a4a-8546-424e-b1b3-3ca249b49c5a" />      
     </td>
     <td align="center">
       <!-- 동영상 주소일 경우 video 태그로 변경 -->
