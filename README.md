@@ -59,11 +59,11 @@
   </tr>
   <tr>
     <td align="center">
-      <video src="https://github.com/user-attachments/assets/1559169a-27ad-467a-baed-949b735d9c2d)" width="380" autoplay loop muted playsinline></video>    
+      <video src="https://github.com/user-attachments/assets/1559169a-27ad-467a-baed-949b735d9c2d" width="380" autoplay loop muted playsinline></video>    
     </td>
     <td align="center">
       <!-- 동영상 주소일 경우 video 태그로 변경 -->
-      <video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" width="380" autoplay loop muted playsinline></video>
+      <video src="" width="380" autoplay loop muted playsinline></video>
     </td>
   </tr>
 </table>
