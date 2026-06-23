@@ -57,7 +57,7 @@
 <table>
   <tr>
     <td align="center"><b>foRG-mini Service</b></td>
-    <td align="center"><b>Movie Review Sentiment</b></td>
+    <td align="center"><b>Movie Review&Sentiment</b></td>
   </tr>
   <tr>
     <td align="center">
@@ -65,7 +65,7 @@
     </td>
     <td align="center">
       <!-- 동영상 주소일 경우 video 태그로 변경 -->
-      <video src="" width="380" autoplay loop muted playsinline></video>
+      <video src="https://github.com/user-attachments/assets/8be287b3-7aaf-4f6f-a6af-6c815a879f47" width="380" autoplay loop muted playsinline></video>
     </td>
   </tr>
 </table>
