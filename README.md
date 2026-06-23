@@ -13,7 +13,7 @@
 
 | 영역 | 핵심 기술 및 역량 |
 | :------- | :------- |
-| **RAG / LLM** | Retrieval 평가 파이프라인 설계, Hybrid Search(BM25+Dense), Reranking, 생성 품질 평가(RAGAS) |
+| **RAG / LLM** | Retrieval 평가 파이프라인 설계, Hybrid Search(BM25+Dense), Reranking, 생성 품질 평가(RAGAS, Judge 구축) |
 | **Computer Vision** | 객체 탐지(YOLO,DETR,RetinaNET,FasterRCNN), 데이터 전처리 파이프라인 구축, 이미지 증강(Copy-Paste, CLAHE, Letterbox) |
 | **NLP** | KcELECTRA 파인튜닝, 감성분석, PEFT(LoRA/AdaLoRA), 모델 경량화(ONNX, Quantization) |
 | **Serving / MLOps** | FastAPI, Streamlit, Docker, GCP, 모델 export 및 크로스 플랫폼 포맷 변환 |
