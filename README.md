@@ -44,14 +44,16 @@
   <tr>
     <td align="center" width="25%"><b>MNIST Service</b></td>
     <td align="center" width="25%"><b>Pill Detection Finder</b></td>
+    
+
+<td align="center" width="25%"><b>Movie Review & Sentiment</b></td>
     <td align="center" width="25%"><b>foRG-mini Service</b></td>
-    <td align="center" width="25%"><b>Movie Review & Sentiment</b></td>
   </tr>
   <tr>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/6670b263-d858-4954-87f0-5cde5256eb0f" muted autoplay loop playsinline></video></td>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/d65565b7-3889-4213-80e2-877f4d0a77cb" muted autoplay loop playsinline></video></td>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/fcf8a899-c7a3-4183-bf00-f237941b7577" muted autoplay loop playsinline></video></td>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/7a900284-4b9c-4c5a-a0e6-098f1f7b88eb" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/b4b01687-b725-4b7d-8c05-b5bfee3006cc" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/9496be54-4271-41ca-afea-dd3eb1cbc5d4" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/f1b32d04-198a-4ff0-8438-2cc9940ea8ce" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/368c6fc4-e738-4405-8a1e-a60acc5ea0eb" muted autoplay loop playsinline></video></td>
   </tr>
 </table>
 
