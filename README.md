@@ -56,10 +56,10 @@
     <td align="center"><b>Movie Review & Sentiment</b></td>
   </tr>
   <tr>
-    <td align="center"><video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" width="240" autoplay loop muted playsinline></video></td>
-    <td align="center"><video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" width="240" autoplay loop muted playsinline></video></td>
-    <td align="center"><video src="https://github.com/user-attachments/assets/1559169a-27ad-467a-baed-949b735d9c2d" width="240" autoplay loop muted playsinline></video></td>
-    <td align="center"><video src="https://github.com/user-attachments/assets/8be287b3-7aaf-4f6f-a6af-6c815a879f47" width="240" autoplay loop muted playsinline></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" width="220" height="160" autoplay loop muted playsinline></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" width="220" height="160" autoplay loop muted playsinline></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/8be287b3-7aaf-4f6f-a6af-6c815a879f47" width="220" height="160" autoplay loop muted playsinline></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/1559169a-27ad-467a-baed-949b735d9c2d" width="220" height="160" autoplay loop muted playsinline></video></td>
   </tr>
 </table>
 
