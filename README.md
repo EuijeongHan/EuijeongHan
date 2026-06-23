@@ -46,7 +46,8 @@
       <img src="https://via.placeholder.com/380x240.png?text=BidMate+Demo+Preparing" width="380"/>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" width="380"/>
+      <!-- 동영상 주소일 경우 video 태그로 변경 -->
+      <video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" width="380" autoplay loop muted playsinline></video>
     </td>
   </tr>
 </table>
@@ -84,7 +85,7 @@
 * 📅 2025.12 - Present   │ Codeit AI Engineer Bootcamp (8기 수강 중)
 * 📅 2023.12 - 2025.12   │ (주)코리아경기도 플랫폼사업실 기획팀 재직 (배달특급 기획/운영)
 * 📅 2020.08 - 2023.07   │ CAFE.STAYPLACE 총괄 운영 및 경영
-* 📅 2015.01 - 2019.04   │ 5급 공무원(재경직) 공개채용시험 전력 준비
+* 📅 2015.01 - 2019.04   │ 5급 공무원(재경직) 공개채용시험 준비
 * 📅 2009.03 - 2017.08   │ 숭실대학교 산업정보시스템공학 (공학사 심화 학위 취득)
 
 ---
