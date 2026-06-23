@@ -98,7 +98,7 @@
 
 * 🔭 **Current Focus:** RAG·CV·NLP 기반 서비스의 End-to-End 시스템 아키텍처 설계 및 구현
 * 💡 **Interests:** 금융·공시 도메인 특화 AI 시스템(foRG) 구축, LLM 기반 정밀 정보 추출 파이프라인
-* 📜 **Certifications:** SQLD, ADsP, 정보처리기사, 빅데이터분석기사
+* 📜 **Certifications:** SQLD, ADsP, (정보처리기사, 빅데이터분석기사)
 
 ### ⏳ Timeline & Experience
 * 📅 2025.12 - Present   │ Codeit AI Engineer Bootcamp (8기 수강 중)
