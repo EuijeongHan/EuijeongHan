@@ -45,7 +45,7 @@
   </tr>
   <tr>
     <td><img src="데모_링크_1" width="380"/></td>
-    <td><img src="[데모_링크_2](https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180)" width="380"/></td>
+    <td><img src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" width="380"/></td>
   </tr>
 </table>
 
