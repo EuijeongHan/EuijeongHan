@@ -94,8 +94,8 @@
     </tr>
     <tr>
       <td><b><a href="https://github.com/EuijeongHan/streamlit_forg-mini">DART 공시 조회<br>(foRG-mini)</a></b></td>
-      <td>foRG-mini · DART 공시 조회 서비스 풀스택 · Streamlit </td>
-      <td><code>YOLO11</code> <code>PyTorch</code> <code>DETR</code> <code>COCO</code></td>
+      <td>foRG 경량 데모 · DART API + LLM 요약 </td>
+      <td><code>Streamlit</code> <code>OpenRouter</code> <code>Phi-4-mini</code>
     </tr>
     <tr>
       <td><b><a href="https://github.com/EuijeongHan/codeit_mission18-movie-review">Movie Sentiment</a></b></td>
