@@ -156,7 +156,7 @@
 
 - 🔭 **Now:** 입찰메이트 도메인 고도화 + GCP 배포 · foRG 구독 서비스화
 - 🚀 **Next:** 카페 광고 AI 서비스 출시 (2026.07)
-- 📜 **Certifications:** SQLD · ADsP · 정보처리기사 · 빅데이터분석기사 *(준비 중)*
+- 📜 **Certifications:** SQLD · ADsP
 
 ### ⏳ Timeline
 
