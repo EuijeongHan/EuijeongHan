@@ -92,6 +92,11 @@
       <td>알약 객체 탐지·분류 (73종) · <i>Data Engineering 리드</i> · 전처리·증강 파이프라인 전담, DETR 베이스라인 독립 실험 · <b>Kaggle mAP@0.5 0.986</b></td>
       <td><code>YOLO11</code> <code>PyTorch</code> <code>DETR</code> <code>COCO</code></td>
     </tr>
+    <tr>| **[foRG-mini]()** | foRG 경량 데모 · DART API + LLM 요약 프로토타입 | `Streamlit`<br>`OpenRouter` |
+      <td><b><a href="https://github.com/EuijeongHan/streamlit_forg-mini">DART 공시 조회<br>(foRG)</a></b></td>
+      <td>foRG-mini · DART 공시 조회 서비스 풀스택 </td>
+      <td><code>YOLO11</code> <code>PyTorch</code> <code>DETR</code> <code>COCO</code></td>
+    </tr>
     <tr>
       <td><b><a href="https://github.com/EuijeongHan/codeit_mission18-movie-review">Movie Sentiment</a></b></td>
       <td>영화 리뷰 감성분석 풀스택 앱 · DB 연동 및 PDF 리포트(한글 폰트 렌더링)</td>
