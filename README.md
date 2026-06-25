@@ -2,7 +2,7 @@
 
 # 한의정 · Han Eui Jeong
 
-### Domain-Driven AI Engineer
+### Domain-Driven AI Engineer | MLOps | AI PM 
 
 **도메인은 빠르게, 구조는 끝까지.**
 낯선 분야를 파고들어 기획부터 배포까지 완결하는 AI 엔지니어
