@@ -180,5 +180,4 @@
 📫 **hej4016@gmail.com**  ·  🔗 **[LinkedIn](https://www.linkedin.com/in/의정-한-652185314)**
 
 </div>
-* **LinkedIn:** [의정 한](https://www.linkedin.com/in/의정-한-652185314)
 
