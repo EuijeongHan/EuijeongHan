@@ -4,7 +4,7 @@
 
 ### 기술을 직접 검증하고 통제하는 IT 기획자 · PM
 #### Domain-Driven IT Planner with Hands-on AI Engineering
-#### AI Engineer | MLOps | AI PM 
+##### AI Engineer | MLOps | AI PM 
 
 **공공 플랫폼 기획 2년 + End-to-End AI 개발 역량.** <br>
 **도메인은 빠르게, 구조는 끝까지.** <br>
