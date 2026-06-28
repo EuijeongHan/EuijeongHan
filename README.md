@@ -5,7 +5,7 @@
 ### 기술을 직접 검증하고 통제하는 IT 기획자 · PM
 #### Domain-Driven IT Planner with Hands-on AI Engineering
 
-**공공 플랫폼 기획 2년 + End-to-End AI 개발 역량.**
+**공공 플랫폼 기획 2년 + End-to-End AI 개발 역량.** <br>
 기술을 표면적으로 다루지 않고, 직접 만들어 본 사람만이 내릴 수 있는 판단으로 IT 전략을 설계합니다.
 
 `공공조달` · `금융/공시` · `소상공인` — 서로 다른 3개 도메인에서 검증한 도메인 적응력
