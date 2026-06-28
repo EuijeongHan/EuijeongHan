@@ -173,10 +173,6 @@
 ---
 
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=EuijeongHan&show_icons=true&theme=tokyonight&hide_border=true" height="160" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EuijeongHan&layout=compact&theme=tokyonight&hide_border=true" height="160" />
-
 <br><br>
 
 📫 **hej4016@gmail.com**  ·  🔗 **[LinkedIn](https://www.linkedin.com/in/의정-한-652185314)**
