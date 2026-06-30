@@ -63,7 +63,7 @@
       <td><code>FastAPI</code> <code>PostgreSQL</code> <code>Docker</code> <code>Telegram Bot</code> <code>DART API</code> <code>Claude API</code></td>
     </tr>
     <tr>
-      <td><b>카페 광고 AI</b><br><sub>🏪 소상공인 · <i>2026.07 개발</i></sub></td>
+      <td><b><a href="https://github.com/elena89y/ai-ad-generator-AdNova">AdNova</b><br><sub>🏪 소상공인·광고 이미지/문구 제작<i>2026.07 개발</i></sub></td>
       <td>
         <b>소상공인 광고·콘텐츠 생성 AI</b> · <i>실제 서비스 출시 목표</i><br>
         • 직접 브랜드 광고를 만드는 <b>증강 도구</b>(Software 3.0)<br>
