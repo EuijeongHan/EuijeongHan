@@ -54,7 +54,7 @@
       <td><code>FLUX.1 Kontext</code> <code>GPT-image-2</code> <code>Diffusers</code> <code>LangChain</code> <code>LangGraph</code> <code>Langfuse</code> <code>FastAPI</code> <code>Next.js</code> <code>Docker</code> <code>GCP</code></td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/GunhoJin/2Team_Project">입찰메이트<br>(BidMate)</a></b><br><sub>🏛️ 공공조달</sub></td>
+      <td><b><a href="https://github.com/GunhoJin/2Team_Project">BidMate</a></b><br><sub>🏛️ 공공조달</sub></td>
       <td>
         <b>B2G 공공조달 RAG 시스템</b> · <i>Retrieval/생성 평가 리드</i><br>
         • 임베딩 3종 × LLM 4종 = <b>12개 조합 비교 실험</b> 후 KURE-v1 + Phi-4-mini 최종 선정<br>
