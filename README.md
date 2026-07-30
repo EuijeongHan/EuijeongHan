@@ -2,7 +2,7 @@
 
 # 한의정 · Han Eui Jeong
 
-### 제약 안에서 실험으로 검증하고, 서비스로 완결하는 AI 엔지니어
+### 실험으로 검증하고, 서비스로 완결하는 AI 엔지니어
 #### AI Engineer — Generative AI · LLM/RAG · MLOps <br> with Product & Domain Background
 
 **도메인은 빠르게, 구조는 끝까지.End-to-End AI 개발 역량.** <br>
