@@ -2,15 +2,16 @@
 
 # 한의정 · Han Eui Jeong
 
-### 기술을 직접 검증하고 통제하는 IT 기획자 · PM
-#### Domain-Driven IT Planner with Hands-on AI Engineering  <br> AI Engineer | MLOps | AI PM
+### 제약 안에서 실험으로 검증하고, 서비스로 완결하는 AI 엔지니어
+#### AI Engineer — Generative AI · LLM/RAG · MLOps <br> with Product & Domain Background
 
-**도메인은 빠르게, 구조는 끝까지. End-to-End AI 개발 역량.** <br>
-낯선 분야를 파고들어 기획부터 배포까지 완결하는 IT 전략을 설계합니다.
+**모델은 실험으로 고르고, 배포까지 책임집니다.** <br>
+GPU 1장·한정된 예산 같은 현실의 제약 안에서 양자화·서빙 구조·평가 하네스로 답을 만듭니다.
 
-`소상공인` · `공공조달` · `금융/공시` — 서로 다른 3개 도메인에서 검증한 도메인 적응력
+`Diffusion 편집` · `LLM/RAG` · `모델 서빙/경량화` — 3개 라이브 서비스로 검증한 엔지니어링
 
 </div>
+
 
 ---
 
