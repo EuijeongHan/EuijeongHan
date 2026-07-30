@@ -6,7 +6,7 @@
 #### AI Engineer — Generative AI · LLM/RAG · MLOps <br> with Product & Domain Background
 
 **도메인은 빠르게, 구조는 끝까지.End-to-End AI 개발 역량.** <br>
-낯선 분야를 파고들어 기획부터 배포까지 완결하는 IT 전략을 설계합니다.
+낯선 분야를 파고들어 기획부터 배포까지 완결하는 엔지니어입니다.
 
 `공공조달` · `금융/공시` · `소상공인` — 서로 다른 3개 도메인에서 검증한 도메인 적응력 <br>
 `Diffusion 편집` · `LLM/RAG` · `모델 서빙/경량화` — 3개 라이브 서비스로 검증한 엔지니어링
