@@ -43,7 +43,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><b><a href="https://github.com/elena89y/ai-ad-generator-AdNova">AdNova</a></b><br><sub>🏪 소상공인 광고 · <i>2026.07 라이브</i></sub></td>
+      <td><b><a href="https://github.com/elena89y/ai-ad-generator-AdNova">AdNova</a></b><br><sub>🏪 소상공인 광고<sub></td>
       <td>
         <b>상품 사진 한 장으로 완성하는 생성형 AI 광고 서비스</b> · <i>AI 파이프라인 전체 리드</i><br>
         • 사용자 선택 기반 3경로 라우팅 설계 — 무드 프리셋은 <b>로컬 FLUX.1 Kontext(4-bit 양자화, L4 1장)</b>, 자유 입력·템플릿 50종은 GPT-image-2 + 실패 시 로컬 폴백<br>
