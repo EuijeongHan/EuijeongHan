@@ -65,7 +65,7 @@
       <td><code>KURE-v1</code> <code>KoE5</code> <code>ChromaDB</code> <code>BM25(Kiwi)</code> <code>bge-reranker-v2-m3</code> <code>Phi-4-mini</code> <code>Gemma</code> <code>GCP</code></td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/EuijeongHan/forg">foRG</a></b><br><sub>📈 금융/공시</sub></td>
+      <td><b><a href="https://github.com/EuijeongHan/forg">forG</a></b><br><sub>📈 금융/공시</sub></td>
       <td>
         <b>DART 공시 자동 요약·알림 서비스</b> · <i>구독 서비스로 발전 중</i><br>
         • 공시 정보 추출 → LLM 요약 → 텔레그램 실시간 푸시<br>
@@ -98,7 +98,7 @@
     </tr>
     <tr>
       <td><b><a href="https://github.com/EuijeongHan/streamlit_forg-mini">DART 공시 조회<br>(foRG-mini)</a></b></td>
-      <td>foRG 경량 데모 · DART API + LLM 요약 </td>
+      <td>forG 경량 데모 · DART API + LLM 요약 </td>
       <td><code>Streamlit</code> <code>OpenRouter</code> <code>Phi-4-mini</code>
     </tr>
     <tr>
@@ -125,7 +125,7 @@
     <td align="center" width="25%"><b>MNIST Service</b></td>
     <td align="center" width="25%"><b>Pill Detection Finder</b></td>
     <td align="center" width="25%"><b>Movie Review & Sentiment</b></td>
-    <td align="center" width="25%"><b>foRG-mini Service</b></td>
+    <td align="center" width="25%"><b>forG-mini Service</b></td>
   </tr>
   <tr>
     <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" muted autoplay loop playsinline></video></td>
