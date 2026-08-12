@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 한의정 · Han Eui Jeong
@@ -12,6 +11,16 @@
 
 `공공조달` · `금융/공시` · `소상공인` — 서로 다른 3개 도메인에서 검증한 도메인 적응력 <br>
 `Diffusion 편집` · `LLM/RAG` · `모델 서빙/경량화` — 3개 라이브 서비스로 검증한 엔지니어링
+
+<br>
+
+<a href="https://github.com/user-attachments/files/30965456/_.pdf">
+  <img src="https://img.shields.io/badge/Portfolio-PDF-FFA726?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" height="32"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/user-attachments/files/30965479/_.pdf">
+  <img src="https://img.shields.io/badge/Cover%20Letter-PDF-546E7A?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" height="32"/>
+</a>
 
 </div>
 
@@ -114,7 +123,6 @@
 </table>
 </details>
 
-[한의정_포트폴리오.pdf](https://github.com/user-attachments/files/30965456/_.pdf)
 ---
 
 ## 🔍 Project Demo
@@ -190,5 +198,14 @@
 <br><br>
 
 📫 **hej4016@gmail.com**  ·  🔗 **[LinkedIn](https://www.linkedin.com/in/%EC%9D%98%EC%A0%95-%ED%95%9C-652185314)**
+
+<br>
+
+<a href="https://github.com/user-attachments/files/30965456/_.pdf">
+  <img src="https://img.shields.io/badge/포트폴리오%20받기-PDF-FFA726?style=flat-square&logo=adobeacrobatreader&logoColor=white"/>
+</a>
+<a href="https://github.com/user-attachments/files/30965479/_.pdf">
+  <img src="https://img.shields.io/badge/자기소개서%20받기-PDF-546E7A?style=flat-square&logo=adobeacrobatreader&logoColor=white"/>
+</a>
 
 </div>
