@@ -1,3 +1,4 @@
+
 <div align="center">
 
 # 한의정 · Han Eui Jeong
@@ -113,6 +114,7 @@
 </table>
 </details>
 
+[한의정_포트폴리오.pdf](https://github.com/user-attachments/files/30965456/_.pdf)
 ---
 
 ## 🔍 Project Demo
