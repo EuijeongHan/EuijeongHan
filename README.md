@@ -122,6 +122,19 @@
 
 <table>
   <tr>
+    <td align="center" width="25%"><b>AdNova Service(Local)</b></td>
+    <td align="center" width="25%"><b>AdNova Service(GPT-image-2)</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" muted autoplay loop playsinline></video></td>
+  </tr>
+</table>
+
+---
+
+<table>
+  <tr>
     <td align="center" width="25%"><b>MNIST Service</b></td>
     <td align="center" width="25%"><b>Pill Detection Finder</b></td>
     <td align="center" width="25%"><b>Movie Review & Sentiment</b></td>
