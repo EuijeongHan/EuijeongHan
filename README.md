@@ -14,6 +14,8 @@
 </div>
 
 
+
+
 ---
 
 ## 🎯 What I Do
@@ -126,8 +128,8 @@
     <td align="center" width="25%"><b>AdNova Service(GPT-image-2)</b></td>
   </tr>
   <tr>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/e7f70aa0-1481-4e7e-bd2c-76453c7f7f33" muted autoplay loop playsinline></video></td>
-    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/b4d1dcda-703b-4f6d-b78c-a102975ef180" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/8a118fd7-57bb-45f3-af98-d0b37056237e" muted autoplay loop playsinline></video></td>
+    <td align="center" width="25%"><video src="https://github.com/user-attachments/assets/b5661cd7-ff8f-4995-a559-b5aea8483548" muted autoplay loop playsinline></video></td>
   </tr>
 </table>
 
