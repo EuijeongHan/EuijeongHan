@@ -120,7 +120,7 @@
 
 <table>
   <tr>
-    <td align="center" width="25%"><b>AdNova Service (Local)</b></td>
+    <td align="center" width="25%"><b>AdNova Service (Local:Flux.1 Kontext)</b></td>
     <td align="center" width="25%"><b>AdNova Service (GPT-image-2)</b></td>
   </tr>
   <tr>
