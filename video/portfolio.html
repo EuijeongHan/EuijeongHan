@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>한의정 · AI Engineer — 60s Portfolio</title>
+<style>
+  :root{
+    --bg:#0A0C10; --bg2:#0F131A; --panel:#141A24;
+    --fg:#EDF1F7; --dim:#8A94A6; --dim2:#5C6675;
+    --accent:#5B8DEF; --hi:#F2C14E; --ok:#4ED8A0;
+    --line:rgba(255,255,255,.10);
+    --font:"Noto Sans CJK KR","Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;
+    --mono:"Noto Sans Mono CJK KR",ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;word-break:keep-all;overflow-wrap:break-word}
+  html,body{background:#000;overflow:hidden}
+  body{display:flex;align-items:center;justify-content:center;min-height:100vh}
+
+  #stage{
+    position:relative;width:1920px;height:1080px;background:var(--bg);
+    color:var(--fg);font-family:var(--font);overflow:hidden;
+    transform-origin:center center;
+  }
+  /* subtle grid + vignette */
+  #stage::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),
+                     linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:120px 120px;opacity:.32;
+  }
+  #stage::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(ellipse 70% 55% at 50% 45%,transparent 0%,rgba(0,0,0,.55) 100%);
+  }
+
+  .scene{position:absolute;inset:0;display:none}
+  .scene.on{display:block}
+  .pad{position:absolute;inset:96px 120px}
+
+  /* ---------- shared type ---------- */
+  .kicker{font-size:26px;font-weight:700;letter-spacing:.22em;color:var(--accent);text-transform:uppercase}
+  .h1{font-size:104px;font-weight:900;line-height:1.12;letter-spacing:-.02em}
+  .h2{font-size:68px;font-weight:900;line-height:1.18;letter-spacing:-.02em}
+  .h3{font-size:46px;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+  .lead{font-size:34px;font-weight:400;line-height:1.55;color:var(--dim)}
+  .small{font-size:26px;color:var(--dim2);font-family:var(--mono)}
+  .hl{color:var(--hi)}
+  .ac{color:var(--accent)}
+
+  /* ---------- S1 hook ---------- */
+  #S1 .pad{display:flex;flex-direction:column;justify-content:center}
+  .hookline{font-size:112px;font-weight:900;letter-spacing:-.03em;line-height:1.1}
+  .hooksub{margin-top:40px;font-size:40px;color:var(--dim);font-weight:400}
+  .rule{height:5px;width:180px;background:var(--accent);margin:0 0 44px}
+
+  /* ---------- S2 identity ---------- */
+  #S2 .pad{display:flex;flex-direction:column;justify-content:center}
+  .name-ko{font-size:132px;font-weight:900;letter-spacing:-.04em;line-height:1}
+  .name-en{font-size:34px;letter-spacing:.34em;color:var(--dim2);margin-top:22px;font-family:var(--mono)}
+  .role{margin-top:52px;font-size:44px;font-weight:700}
+  .role .sep{color:var(--dim2);margin:0 14px;font-weight:300}
+  .tagline{margin-top:30px;font-size:38px;color:var(--dim)}
+
+  /* ---------- project scenes ---------- */
+  .proj{position:absolute;inset:0;display:grid;grid-template-columns:900px 1fr;gap:64px;
+        padding:110px 120px 130px}
+  .col-l{display:flex;flex-direction:column;justify-content:center}
+  .col-r{display:flex;align-items:center;justify-content:center}
+  .badge{display:inline-flex;align-items:center;gap:14px;font-size:24px;font-weight:700;
+         letter-spacing:.14em;color:var(--accent);margin-bottom:26px}
+  .badge .dot{width:12px;height:12px;border-radius:50%;background:var(--accent)}
+  .pname{font-size:82px;font-weight:900;letter-spacing:-.03em;line-height:1.05}
+  .pdesc{margin-top:20px;font-size:32px;color:var(--dim);line-height:1.45}
+  .bullets{margin-top:46px;display:flex;flex-direction:column;gap:26px}
+  .b{display:flex;gap:20px;font-size:30px;line-height:1.45}
+  .b i{flex:none;width:10px;height:10px;border-radius:2px;background:var(--dim2);margin-top:14px;font-style:normal}
+  .b b{font-weight:700;color:var(--fg)}
+  .b span{color:#B9C2D0}
+
+  .metrics{margin-top:46px;display:flex;gap:56px}
+  .m{display:flex;flex-direction:column}
+  .m .v{font-size:78px;font-weight:900;font-family:var(--mono);letter-spacing:-.03em;color:var(--hi);line-height:1}
+  .m .k{margin-top:12px;font-size:24px;color:var(--dim2);letter-spacing:.1em;font-family:var(--mono)}
+
+  .delta{margin-top:46px;display:flex;align-items:baseline;gap:24px}
+  .delta .from{font-size:56px;font-family:var(--mono);color:var(--dim2);text-decoration:line-through;text-decoration-thickness:3px}
+  .delta .arw{font-size:44px;color:var(--dim2)}
+  .delta .to{font-size:92px;font-weight:900;font-family:var(--mono);color:var(--ok);letter-spacing:-.03em}
+  .delta .lbl{font-size:26px;color:var(--dim2);letter-spacing:.08em;font-family:var(--mono);align-self:flex-end;padding-bottom:10px}
+
+  /* browser frame for demo clips */
+  .frame{width:100%;max-width:800px;aspect-ratio:16/10;border-radius:18px;overflow:hidden;
+         background:var(--panel);border:1px solid var(--line);
+         box-shadow:0 50px 120px rgba(0,0,0,.6);display:flex;flex-direction:column}
+  .frame .bar{height:52px;flex:none;display:flex;align-items:center;gap:10px;padding:0 20px;
+              background:#1B222E;border-bottom:1px solid var(--line)}
+  .frame .bar em{width:13px;height:13px;border-radius:50%;background:#39424F;display:block}
+  .frame .bar u{flex:1;height:26px;border-radius:13px;background:#232C3A;margin-left:14px;
+                text-decoration:none;font-size:15px;color:var(--dim2);display:flex;align-items:center;padding:0 14px;font-family:var(--mono)}
+  .frame .body{flex:1;position:relative;background:#0D1219;overflow:hidden}
+  .frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
+      color:var(--dim2);font-family:var(--mono);font-size:24px;text-align:center;padding:40px}
+  .ph .big{font-size:40px;color:#46505F;letter-spacing:.1em}
+  .ph .hint{font-size:20px;color:#333C49;line-height:1.6}
+  .frame.has-clip .ph{display:none}
+
+  /* ---------- S6 thread ---------- */
+  #S6 .pad{display:flex;flex-direction:column;justify-content:center}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-bottom:64px}
+  .card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:40px 36px}
+  .card .ic{font-size:44px;line-height:1}
+  .card .t{margin-top:22px;font-size:36px;font-weight:900;letter-spacing:-.01em}
+  .card .s{margin-top:12px;font-size:25px;color:var(--dim2);font-family:var(--mono)}
+  .pattern{font-size:52px;font-weight:900;letter-spacing:-.02em;line-height:1.35}
+  .pattern .step{color:var(--accent)}
+  .career{margin-top:34px;font-size:30px;color:var(--dim);font-family:var(--mono)}
+
+  /* ---------- S7 CTA ---------- */
+  #S7 .pad{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+  .cta-name{font-size:120px;font-weight:900;letter-spacing:-.04em;line-height:1}
+  .cta-role{margin-top:26px;font-size:38px;color:var(--dim)}
+  .links{margin-top:76px;display:grid;grid-template-columns:max-content max-content;
+         justify-content:center;column-gap:32px;row-gap:22px;font-family:var(--mono);font-size:32px;color:#C6CFDC}
+  .links b{color:var(--accent);font-weight:400;text-align:right}
+  .links span{text-align:left}
+
+  /* progress line */
+  #prog{position:absolute;left:0;bottom:0;height:5px;background:var(--accent);width:0;z-index:5}
+  #wm{position:absolute;right:44px;bottom:34px;font-family:var(--mono);font-size:20px;color:#39424F;letter-spacing:.16em;z-index:5}
+
+  /* preview-only controls */
+  #ui{position:fixed;left:0;right:0;bottom:0;padding:14px 20px;background:rgba(0,0,0,.82);
+      display:flex;gap:16px;align-items:center;font-family:var(--mono);font-size:14px;color:#9AA4B2;z-index:99}
+  #ui input[type=range]{flex:1}
+  #ui button{background:#1B222E;color:#EDF1F7;border:1px solid #2A3342;border-radius:6px;padding:8px 16px;cursor:pointer;font-family:inherit}
+  body.render #ui{display:none}
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <!-- ============ S1 HOOK ============ -->
+  <section class="scene" id="S1">
+    <div class="pad">
+      <div class="rule" data-anim="growx" data-s="0.02" data-d="0.16"></div>
+      <div class="hookline" data-anim="up" data-s="0.08" data-d="0.18">3개 도메인,</div>
+      <div class="hookline" data-anim="up" data-s="0.20" data-d="0.18">3개 <span class="ac">라이브 서비스</span>.</div>
+      <div class="hooksub" data-anim="up" data-s="0.42" data-d="0.18">만들다 만 것은 없습니다.</div>
+    </div>
+  </section>
+
+  <!-- ============ S2 IDENTITY ============ -->
+  <section class="scene" id="S2">
+    <div class="pad">
+      <div class="name-ko" data-anim="up" data-s="0.02" data-d="0.20">한의정</div>
+      <div class="name-en" data-anim="fade" data-s="0.18" data-d="0.20">HAN EUI JEONG</div>
+      <div class="role" data-anim="up" data-s="0.30" data-d="0.20">
+        AI Engineer<span class="sep">/</span>Generative AI<span class="sep">·</span>LLM · RAG<span class="sep">·</span>MLOps
+      </div>
+      <div class="tagline" data-anim="up" data-s="0.46" data-d="0.20">실험으로 <b class="hl">검증</b>하고, 서비스로 <b class="hl">완결</b>합니다.</div>
+    </div>
+  </section>
+
+  <!-- ============ S3 AdNova ============ -->
+  <section class="scene" id="S3">
+    <div class="proj">
+      <div class="col-l">
+        <div class="badge" data-anim="fade" data-s="0.01" data-d="0.08"><span class="dot"></span>01 &nbsp;소상공인 광고 &nbsp;·&nbsp; 라이브 운영 중</div>
+        <div class="pname" data-anim="up" data-s="0.04" data-d="0.10">AdNova</div>
+        <div class="pdesc" data-anim="up" data-s="0.09" data-d="0.10">상품 사진 한 장으로 완성하는<br>생성형 AI 광고 서비스 · AI 파이프라인 전체 리드</div>
+        <div class="bullets">
+          <div class="b" data-anim="up" data-s="0.20" data-d="0.09"><i></i><span>로컬 <b>FLUX.1 Kontext 4-bit(L4 1장)</b> + GPT-image-2 <b>3경로 라우팅</b></span></div>
+          <div class="b" data-anim="up" data-s="0.32" data-d="0.09"><i></i><span><b>3암 비교 + 홀드아웃 검증</b> → 비용·속도 1위 하이브리드를 <b>기각</b></span></div>
+          <div class="b" data-anim="up" data-s="0.44" data-d="0.09"><i></i><span>전 생성 기록 원장 + 실패를 <b>pytest 게이트</b>로 · GCP 라이브 운영</span></div>
+        </div>
+        <div class="delta" data-anim="up" data-s="0.60" data-d="0.10">
+          <span class="from">0.34</span>
+          <span class="arw">→</span>
+          <span class="to" data-count-to="0.80" data-count-from="0.34" data-dec="2" data-s="0.62" data-d="0.22">0.34</span>
+          <span class="lbl">DINOv2 제품 동일성</span>
+        </div>
+      </div>
+      <div class="col-r">
+        <div class="frame" data-anim="scale" data-s="0.03" data-d="0.12">
+          <div class="bar"><em></em><em></em><em></em><u>adnova.app / generate</u></div>
+          <div class="body">
+            <video data-clip="clips/adnova.mp4" data-cs="0" muted playsinline preload="auto"></video>
+            <div class="ph"><div class="big">ADNOVA DEMO</div><div>clips/adnova.mp4</div>
+              <div class="hint">여기에 데모 클립을 넣으면<br>이 자리에 자동으로 재생됩니다</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ S4 BidMate ============ -->
+  <section class="scene" id="S4">
+    <div class="proj">
+      <div class="col-l">
+        <div class="badge" data-anim="fade" data-s="0.01" data-d="0.08"><span class="dot"></span>02 &nbsp;공공조달 B2G</div>
+        <div class="pname" data-anim="up" data-s="0.04" data-d="0.10">BidMate</div>
+        <div class="pdesc" data-anim="up" data-s="0.09" data-d="0.10">공공조달 RAG 시스템 · Retrieval / 생성 평가 리드</div>
+        <div class="bullets">
+          <div class="b" data-anim="up" data-s="0.22" data-d="0.10"><i></i><span>임베딩 3종 × LLM 4종 = <b>12개 조합 비교 실험</b><br>→ KURE-v1 + Phi-4-mini 선정</span></div>
+          <div class="b" data-anim="up" data-s="0.36" data-d="0.10"><i></i><span>쿼리 유형별 <b>Dual Routing</b> 서빙 아키텍처 설계</span></div>
+        </div>
+        <div class="metrics">
+          <div class="m" data-anim="up" data-s="0.54" data-d="0.08"><span class="v" data-count-to="0.91" data-dec="2" data-s="0.56" data-d="0.16">0.00</span><span class="k">HIT@5</span></div>
+          <div class="m" data-anim="up" data-s="0.60" data-d="0.08"><span class="v" data-count-to="0.85" data-dec="2" data-s="0.62" data-d="0.16">0.00</span><span class="k">MRR</span></div>
+          <div class="m" data-anim="up" data-s="0.66" data-d="0.08"><span class="v" data-count-to="0.81" data-dec="2" data-s="0.68" data-d="0.16">0.00</span><span class="k">nDCG</span></div>
+        </div>
+      </div>
+      <div class="col-r">
+        <div class="frame" data-anim="scale" data-s="0.03" data-d="0.12">
+          <div class="bar"><em></em><em></em><em></em><u>bidmate / search</u></div>
+          <div class="body">
+            <video data-clip="clips/bidmate.mp4" data-cs="0" muted playsinline preload="auto"></video>
+            <div class="ph"><div class="big">BIDMATE DEMO</div><div>clips/bidmate.mp4</div>
+              <div class="hint">RAG 검색 → 답변 생성 장면 10초</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ S5 forG ============ -->
+  <section class="scene" id="S5">
+    <div class="proj">
+      <div class="col-l">
+        <div class="badge" data-anim="fade" data-s="0.01" data-d="0.10"><span class="dot"></span>03 &nbsp;금융 / 공시</div>
+        <div class="pname" data-anim="up" data-s="0.05" data-d="0.12">forG</div>
+        <div class="pdesc" data-anim="up" data-s="0.11" data-d="0.12">DART 공시 자동 요약 · 실시간 알림 · 구독 서비스화 진행 중</div>
+        <div class="bullets">
+          <div class="b" data-anim="up" data-s="0.28" data-d="0.12"><i></i><span>공시 추출 → <b>LLM 요약</b> → 텔레그램 <b>실시간 푸시</b></span></div>
+          <div class="b" data-anim="up" data-s="0.46" data-d="0.12"><i></i><span>“공시 알림의 본질은 푸시” — <b>앱이 아닌 봇으로 설계</b></span></div>
+          <div class="b" data-anim="up" data-s="0.62" data-d="0.12"><i></i><span>무료 / 유료 <b>티어 구독 구조</b> 설계 · 사용자 가치 검증</span></div>
+        </div>
+      </div>
+      <div class="col-r">
+        <div class="frame" data-anim="scale" data-s="0.04" data-d="0.14">
+          <div class="bar"><em></em><em></em><em></em><u>telegram / forG bot</u></div>
+          <div class="body">
+            <video data-clip="clips/forg.mp4" data-cs="0" muted playsinline preload="auto"></video>
+            <div class="ph"><div class="big">forG DEMO</div><div>clips/forg.mp4</div>
+              <div class="hint">공시 발생 → 텔레그램 카드 도착 8초</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ S6 THREAD ============ -->
+  <section class="scene" id="S6">
+    <div class="pad">
+      <div class="cards">
+        <div class="card" data-anim="up" data-s="0.02" data-d="0.14"><div class="ic">🏪</div><div class="t">소상공인</div><div class="s">AdNova</div></div>
+        <div class="card" data-anim="up" data-s="0.09" data-d="0.14"><div class="ic">🏛️</div><div class="t">공공조달</div><div class="s">BidMate</div></div>
+        <div class="card" data-anim="up" data-s="0.16" data-d="0.14"><div class="ic">📈</div><div class="t">금융 / 공시</div><div class="s">forG</div></div>
+      </div>
+      <div class="pattern" data-anim="up" data-s="0.34" data-d="0.16">
+        도메인은 달라도 패턴은 같습니다<br>
+        <span class="step">현장의 문제</span> → <span class="step">직접 만든 AI</span> → <span class="step">서비스화</span>
+      </div>
+      <div class="career" data-anim="fade" data-s="0.60" data-d="0.18">카페 운영 → 배달특급 기획 · 운영 → AI 엔지니어</div>
+    </div>
+  </section>
+
+  <!-- ============ S7 CTA ============ -->
+  <section class="scene" id="S7">
+    <div class="pad">
+      <div class="cta-name" data-anim="up" data-s="0.02" data-d="0.16">한의정</div>
+      <div class="cta-role" data-anim="up" data-s="0.14" data-d="0.16">AI Engineer &nbsp;·&nbsp; Generative AI · LLM/RAG · MLOps</div>
+      <div class="links">
+        <b data-anim="up" data-s="0.32" data-d="0.14">GitHub</b><span data-anim="up" data-s="0.32" data-d="0.14">github.com/EuijeongHan</span>
+        <b data-anim="up" data-s="0.40" data-d="0.14">Email</b><span data-anim="up" data-s="0.40" data-d="0.14">hej4016@gmail.com</span>
+        <b data-anim="up" data-s="0.48" data-d="0.14">LinkedIn</b><span data-anim="up" data-s="0.48" data-d="0.14">linkedin.com/in/의정-한</span>
+      </div>
+    </div>
+  </section>
+
+  <div id="prog"></div>
+  <div id="wm">PORTFOLIO 2026</div>
+</div>
+
+<div id="ui">
+  <button id="play">▶ 재생</button>
+  <span id="tlab">0.0s</span>
+  <input id="scrub" type="range" min="0" max="60" step="0.02" value="0">
+  <span id="cutlab">60s cut</span>
+  <button id="cut">30s로 전환</button>
+</div>
+
+<script>
+/* ---------------------------------------------------------------
+   결정론적 타임라인 엔진
+   seek(t) 한 번으로 t초 시점 화면이 완전히 결정된다.
+   → 브라우저 미리보기 / 프레임 렌더링이 100% 동일한 결과를 낸다.
+   --------------------------------------------------------------- */
+const CUTS = {
+  60: { S1:[0,4], S2:[4,8], S3:[8,22], S4:[22,34], S5:[34,44], S6:[44,53], S7:[53,60] },
+  30: { S1:[0,2.4], S2:[2.4,5.4], S3:[5.4,13.2], S4:[13.2,19.4], S5:[19.4,24.2], S6:[24.2,26.8], S7:[26.8,30] }
+};
+let CUT = 60;
+
+const stage  = document.getElementById('stage');
+const scenes = [...document.querySelectorAll('.scene')];
+const prog   = document.getElementById('prog');
+
+const clamp = (v,a,b)=>v<a?a:(v>b?b:v);
+const easeOut = p => 1 - Math.pow(1-p, 3);
+const easeIO  = p => p<.5 ? 4*p*p*p : 1 - Math.pow(-2*p+2,3)/2;
+
+function applyAnim(el, p){
+  const kind = el.dataset.anim;
+  const e = easeOut(p);
+  if(kind === 'up'){
+    el.style.opacity = e;
+    el.style.transform = `translateY(${(1-e)*44}px)`;
+  } else if(kind === 'fade'){
+    el.style.opacity = e;
+  } else if(kind === 'scale'){
+    el.style.opacity = e;
+    el.style.transform = `scale(${0.94 + 0.06*e})`;
+  } else if(kind === 'growx'){
+    el.style.transform = `scaleX(${e})`;
+    el.style.transformOrigin = 'left center';
+  }
+}
+
+function applyCount(el, p){
+  const to   = parseFloat(el.dataset.countTo);
+  const from = parseFloat(el.dataset.countFrom ?? '0');
+  const dec  = parseInt(el.dataset.dec ?? '0', 10);
+  el.textContent = (from + (to-from)*easeIO(p)).toFixed(dec);
+}
+
+function seek(t){
+  const map = CUTS[CUT];
+  const total = map.S7[1];
+  t = clamp(t, 0, total);
+  prog.style.width = (t/total*100) + '%';
+
+  for(const sc of scenes){
+    const [t0,t1] = map[sc.id];
+    const active = (t >= t0 && t < t1) || (t >= total && sc.id === 'S7');
+    sc.classList.toggle('on', active);
+    if(!active) continue;
+
+    const dur = t1 - t0;
+    const f = clamp((t - t0) / dur, 0, 1);
+
+    for(const el of sc.querySelectorAll('[data-anim]')){
+      const s = parseFloat(el.dataset.s ?? '0');
+      const d = parseFloat(el.dataset.d ?? '0.15');
+      applyAnim(el, clamp((f - s)/d, 0, 1));
+    }
+    for(const el of sc.querySelectorAll('[data-count-to]')){
+      const s = parseFloat(el.dataset.s ?? '0');
+      const d = parseFloat(el.dataset.d ?? '0.2');
+      applyCount(el, clamp((f - s)/d, 0, 1));
+    }
+    for(const v of sc.querySelectorAll('video[data-clip]')){
+      if(!v.dataset.ready) continue;
+      const off = parseFloat(v.dataset.cs ?? '0');
+      const want = off + (t - t0);
+      const max = Math.max(0, (v.duration || 0) - 0.05);
+      const target = max > 0 ? (want % (max + 0.05)) : 0;   // 클립이 짧으면 루프
+      if(Math.abs(v.currentTime - target) > 0.02) v.currentTime = target;
+    }
+  }
+}
+window.seek = seek;
+window.setCut = c => { CUT = c; seek(0); };
+window.getTotal = () => CUTS[CUT].S7[1];
+
+/* ---- 클립 로딩: 파일이 있으면 붙이고, 없으면 플레이스홀더 유지 ---- */
+const clipPromises = [];
+for(const v of document.querySelectorAll('video[data-clip]')){
+  clipPromises.push(new Promise(res => {
+    v.addEventListener('loadedmetadata', () => {
+      v.dataset.ready = '1';
+      v.closest('.frame').classList.add('has-clip');
+      res(true);
+    }, {once:true});
+    v.addEventListener('error', () => res(false), {once:true});
+    v.src = v.dataset.clip;
+  }));
+}
+window.clipsReady = Promise.all(clipPromises);
+
+/* ---- 모든 video의 seek 완료를 기다린다 (프레임 렌더용) ---- */
+window.seekSettled = function(){
+  const vids = [...document.querySelectorAll('.scene.on video[data-clip]')].filter(v => v.dataset.ready);
+  return Promise.all(vids.map(v => v.seeking
+    ? new Promise(r => v.addEventListener('seeked', r, {once:true}))
+    : Promise.resolve()));
+};
+
+/* ---- 화면에 맞춰 축소 (미리보기 전용, 렌더 시엔 1:1) ---- */
+function fit(){
+  if(document.body.classList.contains('render')){ stage.style.transform='none'; return; }
+  const s = Math.min(window.innerWidth/1920, (window.innerHeight-60)/1080);
+  stage.style.transform = `scale(${s})`;
+}
+addEventListener('resize', fit); window.fit = fit; fit();
+
+/* ---- 미리보기 컨트롤 ---- */
+const scrub=document.getElementById('scrub'), tlab=document.getElementById('tlab'),
+      playBtn=document.getElementById('play'), cutBtn=document.getElementById('cut'),
+      cutlab=document.getElementById('cutlab');
+let playing=false, t0=0, base=0;
+function loop(ts){
+  if(!playing) return;
+  if(!t0) t0=ts;
+  const t = base + (ts-t0)/1000;
+  if(t >= window.getTotal()){ playing=false; playBtn.textContent='▶ 재생'; seek(window.getTotal()); return; }
+  scrub.value=t; tlab.textContent=t.toFixed(1)+'s'; seek(t);
+  requestAnimationFrame(loop);
+}
+playBtn.onclick=()=>{
+  playing=!playing; playBtn.textContent = playing ? '❚❚ 일시정지' : '▶ 재생';
+  base = parseFloat(scrub.value); t0=0;
+  if(playing) requestAnimationFrame(loop);
+};
+scrub.oninput=()=>{ playing=false; playBtn.textContent='▶ 재생'; tlab.textContent=(+scrub.value).toFixed(1)+'s'; seek(+scrub.value); };
+cutBtn.onclick=()=>{
+  CUT = CUT===60?30:60;
+  cutlab.textContent = CUT+'s cut';
+  cutBtn.textContent = (CUT===60?'30':'60')+'s로 전환';
+  scrub.max = CUT; scrub.value = 0; playing=false; playBtn.textContent='▶ 재생';
+  seek(0);
+};
+seek(0);
+</script>
+</body>
+</html>
